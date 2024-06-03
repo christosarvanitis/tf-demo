@@ -1,5 +1,5 @@
 locals {
-	msg = "Hello"
+	msg = jsonencode({"msg": "Hello $${name}"})
 }
 
 output "out" {
